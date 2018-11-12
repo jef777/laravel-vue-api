@@ -15,11 +15,17 @@ php artisan key:generate
 
 # add the database connection config to your .env file
 DB_CONNECTION=mysql
+
 DB_HOST=127.0.0.1
+
 DB_PORT=3306
+
 DB_DATABASE=taskproject
+
 DB_USERNAME=root
+
 DB_PASSWORD=
+
 
 # run the migration files to generate the schema
 php artisan migrate

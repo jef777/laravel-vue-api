@@ -5,7 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
 class CreateSupplierTable extends Migration
-{ 
+{
     /**
      * Run the migrations.
      *
@@ -16,6 +16,7 @@ class CreateSupplierTable extends Migration
         Schema::create('supplier', function (Blueprint $table) {
             $table->increments('id');
             $table->string('delivery_date');
+            $table->string('supplier_name');
             $table->integer('delivery_id')->unsigned();
             $table->timestamps();
 
